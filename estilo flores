@@ -1,0 +1,19 @@
+#flor {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    animation: destello 2s ease-in-out infinite;
+}
+
+@keyframes destello {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
