@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow: hidden; /* Evita que las hojas se vean fuera de la pantalla */
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+        }
+        h1 {
+            color: #fff;
+        }
+        #contenedor {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+        }
+        #flor {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px;
+            animation: destello 2s ease-in-out infinite;
+        }
+
+        @keyframes destello {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #dedicatoria {
+            font-size: 18px;
+            margin: 20px;
+        }
+        #dedicatoria p {
+            margin: 10px 0;
+        }
+        #dedicatoria p:last-child {
+            font-style: italic;
+        }
+        #primavera {
+            font-size: 24px;
+            color: #59a44e;
+        }
+
+        /* Regla de medios para dispositivos con un ancho máximo de 600px */
+        @media (max-width: 600px) {
+            #flor {
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+            }
+            #dedicatoria {
+                font-size: 16px;
+            }
+        }
+
+        /* Estilos para las hojas cayendo */
+        .hoja {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #59a44e;
+            border-radius: 50%;
+            animation: caidaHoja 10s linear infinite;
+        }
+
+        @keyframes caidaHoja {
+            0% {
+                transform: translateY(-10px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(400px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Bienvenida a la Primavera</h1>
+    </header>
+    <div id="contenedor">
+        <p id="primavera">¡La primavera ha llegado!</p>
+        <img id="flor" src="yellow_flower.jpg" alt="Flores Amarillas">
+        <p>Querido amiga,</p>
+        <p>En esta temporada de renacimiento y florecimiento, quiero expresar mi aprecio por tu amistad y la alegría que compartimos. Estas flores amarillas son un símbolo de nuestra relación especial.</p>
+        <p>Con cariño,</p>
+        <p>EQUIPO DUIS</p>
+    </div>
+
+    <!-- Agregamos hojas cayendo -->
+    <div class="hoja" style="left: 10%;"></div>
+    <div class="hoja" style="left: 20%;"></div>
+    <div class="hoja" style="left: 30%;"></div>
+    <div class="hoja" style="left: 40%;"></div>
+    <div class="hoja" style="left: 50%;"></div>
+    <div class="hoja" style="left: 60%;"></div>
+    <div class="hoja" style="left: 70%;"></div>
+    <div class="hoja" style="left: 80%;"></div>
+    <div class="hoja" style="left: 90%;"></div>
+
+    <script>
+        // Puedes agregar código JavaScript aquí si deseas hacer la página más interactiva.
+    </script>
+</body>
+</html>
